@@ -5,7 +5,7 @@ public class car4 {
     String color;
     int speed;
 
-    // this refers to the current class
+    // this refers to the current class fields
     public car4(String brand, String color, int speed ){    //I'll make my constructor parameterised
         System.out.println("Constructor called");
         this.brand = brand; //this.brand refers to the above intialised brand
