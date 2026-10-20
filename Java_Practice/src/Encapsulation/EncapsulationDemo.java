@@ -17,9 +17,9 @@ class car {
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
+//    public void setSpeed(int speed) { // by removing setter nobody can change the details
+//        this.speed = speed; // Nobody can set the values
+//    }
 
     void drive(){
         System.out.println(brand + " is driving at " + speed);
@@ -29,7 +29,7 @@ class car {
 public class EncapsulationDemo {
     static void main() {
         car c1 = new car("Mercedes", "Black", 450);
-
+        c1.drive();
         car c2 = new car("BMW", "White", 500);
 
     }
