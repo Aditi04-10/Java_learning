@@ -1,8 +1,8 @@
 package Inheritance;
 
 public class Vehicle {
-    public String brand;
-    public int speed;
+    private String brand;
+    private int speed;
 
     public Vehicle( String brand, int speed) {
         this.speed = speed;
