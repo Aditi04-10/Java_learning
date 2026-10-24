@@ -1,9 +1,24 @@
 public class Extra {
     static void main() {
-        int a=3, b=8;
+        int score = 80;
 
-        boolean c = a > 5 && ++b > 6;
+        if (score >= 90) {
+            System.out.print("A");
+        }
 
-        System.out.println(b);
+
+        if (score >= 80) {
+            System.out.print("B");
+        }
+
+        if (score >= 70) {
+            System.out.print("C");
+        }
+
+        if (score >= 60) {
+            System.out.print("D");
+        } else {
+            System.out.print("E");
+        }
     }
 }
