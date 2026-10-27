@@ -1,5 +1,6 @@
 package Polymorphism;
 
+import Inheritance.Vehicle;
 import Inheritance.bike;
 import Inheritance.car;
 
@@ -10,7 +11,10 @@ public class Polymorphism_demo {      //Polymorphism means the ability of an obj
 
         bike_Poly b1 = new bike_Poly("R15", 150, true);
         b1.displayInfo();
-        c1.start(); //Accessing from parent class Vehicle
+        c1.start(); //Accessing the override method "start()" in car_Poly class
         b1.start();  //Same here
+
+        Vehicle_Poly v1 = new Vehicle_Poly("Vehicle_Brand",202);
+        v1.start();
     }
 }
