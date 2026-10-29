@@ -21,5 +21,11 @@ public class Polymorphism_demo {      //Polymorphism means the ability of an obj
         Vehicle_Poly v2 = new car_Poly("Ford",250,6); // we can make a parent class object &
         v2.start();                                                      // can instantiate it with child class with the help of new operator
                                                                         // This is also called Runtime Polymorphism (Method Overriding) because it happens during runtime
+        Vehicle_Poly v3 = new bike_Poly("BMW_bike",400,true);
+        v3.start();
+
+        //This is Method Overloading
+        b1.start("Hello");
     }
+
 }
