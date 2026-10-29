@@ -4,6 +4,15 @@ import Inheritance.Vehicle;
 import Inheritance.bike;
 import Inheritance.car;
 
+class Calculator{
+    public int add(int a, int b){
+        return a+b;
+    }
+    public double add(double a, double b){    // Here is Method Overloading, same function name with different parameters
+        return a+b;
+    }
+}
+
 public class Polymorphism_demo {      //Polymorphism means the ability of an object to take multiple forms
     static void main() {             // Two types are: Compile time  &  Runtime
         car_Poly c1 = new car_Poly("Toyota", 200, 4);
@@ -26,6 +35,12 @@ public class Polymorphism_demo {      //Polymorphism means the ability of an obj
 
         //This is Method Overloading
         b1.start("Hello");
+
+
+        //This is also called Compile time Polymorphism
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(4,6));
+        System.out.println(calc.add(4.5,6.8));
     }
 
 }
