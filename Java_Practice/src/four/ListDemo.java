@@ -31,6 +31,11 @@ public class ListDemo {
 //        users.add("Charlie");
 //        users.add(1); //You can add any type of datatype beacause there in no typesafety
 
+//        System.out.println("All users");
+//        for(user u1 : users){    // Created Object here
+//            System.out.println(u1);
+//        }
+
         List<String> users = new ArrayList<>(); // This is for typesafety
         users.add("Alice");
         users.add("Bob");
@@ -38,7 +43,7 @@ public class ListDemo {
         users.add("Alice"); //Also we can add multiple elements
 
         System.out.println("All users");
-        for(Object u1 : users){    // Created Object here
+        for(String u1 : users){    // Created Object here  : Here the type of the object is only String
             System.out.println(u1);
         }
         System.out.println("Elements using index : "+ users.get(1));
