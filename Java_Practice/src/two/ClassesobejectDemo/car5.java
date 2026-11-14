@@ -21,10 +21,12 @@ public class car5 {
     }
 
     public void setSpeed(int speed) {
+
         this.speed = speed;
     }
 
     void drive(){
+
         System.out.println(brand + " is driving at " + speed);
     }
 }
